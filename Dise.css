@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(174, 230, 161);
+    text-align: center;
+    
+}
+h1{
+    border:2px solid rgb(11, 92, 4);
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    width: auto;
+    flex-direction: row;
+    align-items: stretch;
+}
+.container div{
+    min-width: 150px;
+}
+.card{
+    background: white;
+    width: 370px;
+    margin: 20px;
+    border-radius: 15px;
+    border:2px solid rgb(11, 92, 4);
+    padding: 10px 10px 2px 10px;
+    box-shadow: rgba(10, 253, 160, 0.288) 0px 30px 60px -12px inset, rgb(0, 196, 16) 0px 18px 36px -18px inset;
+}
+.card-image{
+    height: 190px;
+    margin-bottom: 30px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.car-1{
+    background-image: url('https://nupec.com/wp-content/uploads/2021/12/dry-dog-food-kibble-with-a-gray-scoop-feeding-pe-2021-09-01-13-45-00-utc-1024x711.jpg');
+}
+.car-2{
+    background-image: url('https://mfe.losandes.com.ar/uploads/2022/11/image636c5edd4c1ef.jpg');
+}
+.car-3{
+    background-image: url('https://comoeducarauncachorro.com/blog/wp-content/uploads/2012/11/cachorro3-300x227.jpg');
+}
+.car-4{
+    background-image: url('https://www.elpais.com.co/files/listing_multimedia_main/uploads/2021/07/19/60f5905c73d2c.jpeg');
+}
+.car-5{
+    background-image: url('https://petsinthesky.com.mx/wp-content/uploads/2021/11/beneficios-de-ejercitar-a-tu-mascota.jpg');
+}
+.car-6{
+    background-image: url('https://www.tiendanimal.es/articulos/wp-content/uploads/2010/06/Vacunas-para-cachorros-tiendanimal-2-1200x900.jpg');
+}
+.car h2{
+    padding: 10px;
+}
+.card p{
+    padding: 10px;
+}
+.card button{
+    background-color: rgb(29, 199, 29);
+    border: none;
+    padding: 2px 5px;
+    font-size: 17px;
+    font-weight: bold;
+    border:2px solid rgb(11, 92, 4);
+}
+.card:hover{
+    background-color: rgb(25, 182, 25);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all is ease;
+}
+header .container-header{
+    background-color: rgb(25, 182, 25);
+    padding: 28px;
+    box-shadow:  0 0 30px rgb(11, 92, 4);
+    
+}
+header li{
+    display: inline;
+}
+header li a{
+    color: #000;
+    text-decoration: none;
+    padding: 13px;
+    transition: .3s ease;
+}
+header li a:hover
+{
+    color: white;
+}
+
+header li img{
+    width: 80px;
+    float: left;
+    margin-top:-30px;
+
+}
+header div .link{
+    height: 20px;
+    display: inline-block;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+}
+footer{
+    position: relative;
+    width: 100%;
+    background: rgb(11, 92, 4);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .iconos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .iconos li{
+list-style: none;
+}
+footer .iconos li a{
+    font-size: 2em;
+    color: #000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+footer .iconos li a:hover{
+    transform: translateY(-10px);
+    color: #fff;
+}
+/* Estilos responsivos */
+@media screen and (min-width: 768px) {
+    .card {
+        width: calc(33.33% - 40px);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        width: calc(25% - 40px);
+    }
+}
